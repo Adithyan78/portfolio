@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      Adit<span>hyan</span>
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="gradient-btn">Contact Me</button>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, It's <span>Adithyan</span></h1>
+      <h3>I'm a <span>Developer</span></h3>
+      <p>B.Tech Data Science | Learning. Building. Innovating with Data</p>
+      <div class="social-icons">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 1024 1024" fill="currentColor">
+            <path d="M781.49 743.67L530.85 992.57c-31.62 31.61-84.22 31.61-115.84 0L159.14 736.7c-31.61-31.61-31.61-83.33 0-114.95l70.79-70.68c7.73-7.72 20.2-7.72 27.92 0l71.69 71.6c7.72 7.72 7.72 20.19 0 27.91l-43.49 43.4c-7.72 7.72-7.72 20.19 0 27.91l135.72 135.63c7.72 7.72 20.19 7.72 27.91 0l174.39-174.3c7.72-7.72 7.72-20.19 0-27.91L373.55 462.95c-62.86-62.77-62.86-164.88 0-227.65l174.3-174.3c31.61-31.61 84.22-31.61 115.83 0l245.76 245.77c31.62 31.61 31.62 83.23 0 114.84l-71.69 71.6c-7.72 7.72-20.19 7.72-27.91 0l-71.6-71.51c-7.72-7.73-7.72-20.2 0-27.92l43.49-43.4c7.72-7.72 7.72-20.19 0-27.91L645.86 175.63c-7.72-7.72-20.19-7.72-27.91 0l-135.72 135.63c-7.72 7.72-7.72 20.19 0 27.91l299.26 299.16c62.77 62.77 62.77 164.88 0 227.66z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <!-- 🔁 Rotating Tag Cloud Instead of Image -->
+    <div class="home-img">
+      <canvas width="300" height="300" id="tagCanvas">
+        Your browser does not support the canvas element.
+      </canvas>
+      <ul id="tagList">
+        <li><a href="#">React</a></li>
+        <li><a href="#">MongoDb</a></li>
+        <li><a href="#">Express</a></li>
+        <li><a href="#">Numpy</a></li>
+        <li><a href="#">Pandas</a></li>
+        <li><a href="#">NodeJS</a></li>
+        <li><a href="#">Firebase</a></li>
+        <li><a href="#">Matplotlib</a></li>
+        <li><a href="#">java</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <!-- <li><a href="#">SASS</a></li> -->
+        <!-- <li><a href="#">Flask</a></li> -->
+        <li><a href="#">Python</a></li>
+        <!-- <li><a href="#">REST</a></li> -->
+        <!-- <li><a href="#">Ionic</a></li> -->
+      </ul>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+  <div class="about-wrapper" style="display: flex; flex-wrap: wrap; gap: 3rem; align-items: flex-start;">
+
+    <!-- Left Side: About Content -->
+    <div class="about-content" style="flex: 1 1 400px;">
+      <h2>About <span>Me</span></h2>
+      <p>Hi! I'm Adithyan, a passionate and curious learner with a deep interest in technology and creativity. I enjoy exploring new concepts, solving real-world problems, and building meaningful projects. Whether it's web development, data science, or creative design, I strive to keep learning and growing every day.</p>
+      <p>I'm currently expanding my skills in the MERN stack, while also diving into Machine Learning and Data Science. I love creating user-friendly applications and experimenting with innovative ideas that push boundaries.</p>
+      <p>When I'm not coding or studying, you'll probably find me thinking up new projects, researching tech trends, or working on self-improvement. I believe in continuous learning, strong collaboration, and making a difference through technology.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+
+    <!-- Right Side: Skill Bars -->
+    <div class="skills-box" style="flex: 1 1 350px;">
+      <h2>Skills</h2>
+
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar-fill" style="--bar-width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar-fill" style="--bar-width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar-fill" style="--bar-width: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">React</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar-fill" style="--bar-width: 65%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar-container">
+          <div class="skill-bar-fill" style="--bar-width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="services" id="services">
+    <h2 class="heading">services</h2>
+    <div class="services-container">
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>We offer expert frontend development services to build responsive, user-friendly, and visually appealing web interfaces using modern technologies like HTML, CSS, JavaScript, and React. Our focus is on performance, accessibility, and seamless user experience across all devices.</p>
+            
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="service-info">
+                <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>We provide reliable backend development services to build secure, scalable, and efficient server-side applications using technologies like Node.js, Express, MongoDB, and SQL. Our focus is on robust APIs, data management, and smooth integration to power dynamic, high-performing web applications.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-box">
+        <div class="project-card">
+            <img src="Screenshot (26).png" alt="">
+            <h3>Project 1</h3>
+            <p>Book Haven is an online library management system built as my first full-stack project. It supports full CRUD operations to manage books and users efficiently.
+
+Users can browse, borrow, and return books, while admins can add, update, or delete book records. The system features a user-friendly interface and real-time data handling.</p>
+<div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+            <img src="Screenshot (26).png" alt="">
+            <h3>Project 2</h3>
+            <p>Book Haven is an online library management system built as my first full-stack project. It supports full CRUD operations to manage books and users efficiently.
+
+Users can browse, borrow, and return books, while admins can add, update, or delete book records. The system features a user-friendly interface and real-time data handling.
+
+</p>
+<div class="btn">Review Project</div>
+        </div>
+        <div class="project-card">
+            <img src="Screenshot (26).png" alt="">
+            <h3>Project 3</h3>
+            <p>Book Haven is an online library management system built as my first full-stack project. It supports full CRUD operations to manage books and users efficiently.
+
+Users can browse, borrow, and return books, while admins can add, update, or delete book records. The system features a user-friendly interface and real-time data handling.</p>
+<div class="btn">Review Project</div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="#">
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+
+        </div>
+        <div class="input-group-2">
+            <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form>
+</section>
+<footer class="footer">
+    <div class="social-icons">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 1024 1024" fill="currentColor">
+            <path d="M781.49 743.67L530.85 992.57c-31.62 31.61-84.22 31.61-115.84 0L159.14 736.7c-31.61-31.61-31.61-83.33 0-114.95l70.79-70.68c7.73-7.72 20.2-7.72 27.92 0l71.69 71.6c7.72 7.72 7.72 20.19 0 27.91l-43.49 43.4c-7.72 7.72-7.72 20.19 0 27.91l135.72 135.63c7.72 7.72 20.19 7.72 27.91 0l174.39-174.3c7.72-7.72 7.72-20.19 0-27.91L373.55 462.95c-62.86-62.77-62.86-164.88 0-227.65l174.3-174.3c31.61-31.61 84.22-31.61 115.83 0l245.76 245.77c31.62 31.61 31.62 83.23 0 114.84l-71.69 71.6c-7.72 7.72-20.19 7.72-27.91 0l-71.6-71.51c-7.72-7.73-7.72-20.2 0-27.92l43.49-43.4c7.72-7.72 7.72-20.19 0-27.91L645.86 175.63c-7.72-7.72-20.19-7.72-27.91 0l-135.72 135.63c-7.72 7.72-7.72 20.19 0 27.91l299.26 299.16c62.77 62.77 62.77 164.88 0 227.66z"/>
+          </svg>
+        </a>
+      </div>
+      <ul class="list">
+        <li>
+            <a href="#">FAQ</a>
+        </li>
+        <li>
+            <a href="#services">Services</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        © Adithyan B | All Rights Reserved
+      </p>
+
+</footer>
+
+
+
+  <!-- TagCanvas Script -->
+  <script src="https://www.goat1000.com/tagcanvas.min.js"></script>
+<script>
+  window.onload = function () {
+    const canvas = document.getElementById("tagCanvas");
+    const dpr = window.devicePixelRatio || 1;
+
+    const size = 500;
+    canvas.width = size * dpr;
+    canvas.height = size * dpr;
+    canvas.style.width = size + "px";
+    canvas.style.height = size + "px";
+
+    try {
+      TagCanvas.Start("tagCanvas", "tagList", {
+        textColour: "#ea580c",
+        outlineColour: "transparent",
+        reverse: true,
+        depth: 0.8,
+        maxSpeed: 0.05,
+        initial: [0.05, -0.05],
+        weight: true,
+        weightMode: "both",
+        textFont: "Poppins, sans-serif",
+        textHeight: 30,
+        zoom: 1.0,
+        wheelZoom: false,
+        frontSelect: true,
+
+        // ✅ KEY SETTINGS TO KEEP SPINNING
+        freezeActive: true,
+        active: false,
+        dragControl: false,
+        decel: 0,
+        noSelect: true,
+        clickToFront: false,
+      });
+    } catch (e) {
+      console.error("TagCanvas error:", e);
+      canvas.style.display = "none";
+    }
+  };
+</script>
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
